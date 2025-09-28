@@ -1,0 +1,317 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARAGUA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #44b21f, #219fda);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        header {
+            padding: 25px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 25px;
+        }
+        
+        .player-section {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .player-section h2 {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .player-section h2 i {
+            color: #fdbb2d;
+        }
+        
+        .strudel-container {
+            width: 100%;
+            height: 600px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: #000;
+        }
+        
+        .strudel-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .info-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .info-card {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .info-card h3 {
+            margin-bottom: 15px;
+            color: #fdbb2d;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .pattern-list {
+            list-style-type: none;
+        }
+        
+        .pattern-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .pattern-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .pattern-name {
+            font-weight: bold;
+            color: #fdbb2d;
+        }
+        
+        .pattern-desc {
+            opacity: 0.8;
+        }
+        
+        code {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            display: block;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #fdbb2d;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background: #ffcc44;
+            transform: translateY(-2px);
+        }
+        
+        button.secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        button.secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .resolution-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .resolution-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 768px) {
+            .strudel-container {
+                height: 500px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .strudel-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHARAGUA</h1>
+            <div class="subtitle">[A]Live</div>
+        </header>
+        
+        <div class="content">
+            <div class="player-section">
+                <div class="strudel-container">
+                    <iframe 
+                        class="strudel-iframe"
+                        src="https://strudel.cc/#c2V0Y3BtKDEyMC82KQokMTogcygiW34gYmQgYmRdKjIsIGhoQDMqMiIpLmJhbmsoIlJvbGFuZFRSOTA5IikKJDI6IGFycmFuZ2UoCiAgWzgsICJbRE1AMjYgIENNQDEyIERNQDEyXS80Il0KKS5jaG9yZCgpLnZvaWNpbmcoKS5nYWluKCIxIikKJDM6YXJyYW5nZSgKICBbOCwgIltkQDggZiMgZCBmIyBkIGYjIGQ0QDggYzQgYSBnIGYjIGQgY0A4IGUgYyBlIGMgZyBmI0AxMiBdLzQiXQopLm5vdGUoKS5zKCJbZ21fc3ludGhfc3RyaW5ncywgIGdtX3JlY29yZGVyXSIpLnJvb20oIjwwLjk6MSAwLjk6ND4iKQoKJDQ6YXJyYW5nZSgKICBbOCwgIltkQDggZiMgZCBmIyBkIGYjIGQ0QDggYzQgYSBnIGYjIGQgY0A4IGUgYyBlIGMgZyBmI0AxMiBdLzQiXQopLm5vdGUoKS5zKCJbWyBnbV92aWJyYXBob25lLCBnbV9kdWxjaW1lcl0gWyBnbV9wYWRfd2FybSwgZ21fZHVsY2ltZXJdXSIpLnJvb20oIjwwLjk6MSAwLjk6ND4iKQouY2xpcChzaW5lLnJhbmdlKC42LC44KS5zbG93KDgpKS5nYWluKCIuMSEyIDEgLjEhMiAxIC4zIDEiKQouanV4KHJldikub3JiaXQoIjAuMSAwLjQgMSAiKQoucm9vbSgyKQouc29tZXRpbWVzKGFkZChub3RlKCIxMiIpKSkKLmxwZihwZXJsaW4ucmFuZ2UoMjAwLDIwMDAwKS5zbG93KDQpKQoubGF0ZSgiWzAgLjAxXSo0IikubGF0ZSgiWzAgLjAxXSoyIikuc2l6ZSg0KS5jb2xvcigiY3lhbiBtYWdlbnRhIikucGlhbm9yb2xsKCkKJDU6IG5vdGUoIlt%2BQDM3IGQgZiMgYSBmIyBkIGM0QDIgYkAyIGEgZyBhQDZdLzQiKQogIC5zKCJnbV90cnVtcGV0LCBnbV90cm9tYm9uZSIp
+"
+                        allow="accelerometer; microphone; camera; midi; encrypted-media; display-capture"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-modals"
+                    ></iframe>
+                </div>
+                <div class="controls">
+                    <button onclick="toggleFullscreen()">Toggle Fullscreen</button>
+                    <button class="secondary" onclick="copyCode()">Copy Code</button>
+                    <button class="secondary" onclick="showInfo()">About This</button>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFullscreen() {
+            const elem = document.querySelector('.strudel-container');
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
+        }
+        
+        function copyCode() {
+            const code = `setcpm(120/6)
+$1: s("[~ bd bd]*2, hh@3*2").bank("RolandTR909")
+$2: arrange(
+  [8, "[DM@26  CM@12 DM@12]/4"]
+).chord().voicing().gain("0.75")
+$3:arrange(
+  [8, "[d@8 f# d f# d f# d4@8 c4 a g f# d c@8 e c e c g f#@12 ]/4"]
+).note().s("[gm_synth_strings,  gm_recorder]").room("<0.9:1 0.9:4>")
+
+$4:arrange(
+  [8, "[d@8 f# d f# d f# d4@8 c4 a g f# d c@8 e c e c g f#@12 ]/4"]
+).note().s("[[ gm_vibraphone, gm_dulcimer] [ gm_pad_warm, gm_dulcimer]]").room("<0.9:1 0.9:4>")
+.clip(sine.range(.6,.8).slow(8)).gain(".1!2 1 .1!2 1 .3 1")
+.jux(rev).orbit("0.1 0.4 1 ")
+.room(2)
+.sometimes(add(note("12")))
+.lpf(perlin.range(200,20000).slow(4))
+.late("[0 .01]*4").late("[0 .01]*2").size(4).color("cyan magenta").pianoroll()
+$5: note("[~@37 d f# a f# d c4@2 b@2 a g a@6]/4")
+  .s("gm_trumpet, gm_trombone")`;
+            
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Copy and Share!');
+            });
+        }
+        
+        function showInfo() {
+            alert('Mbohapyha árape, ajujevy ta\'angáru. Aha pyhareve, oñemopu\'ã haguã, ita hykuévaicha.');
+        }
+        
+        function refreshPlayer() {
+            const iframe = document.querySelector('.strudel-iframe');
+            iframe.src = iframe.src; // Reload the iframe
+        }
+        
+        function setResolution(height) {
+            const container = document.querySelector('.strudel-container');
+            container.style.height = height + 'px';
+        }
+    </script>
+</body>
+</html>
