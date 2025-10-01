@@ -1,9 +1,13 @@
 # Charagua -  Live-Coding
 
 ##  Peteĩ: 🎵 About
-Another Abandoned Memory
+Another Abandoned Memory project. 
 
 ## Mokõi: 🚀 Quick Start
+
+Check out my [project](https://github.com/username/repo).
+
+or clone it and use it.
 
 ```bash
 # Clone and run locally
