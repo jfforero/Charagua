@@ -5,7 +5,7 @@ Another Abandoned Memory project.
 
 ## Mokõi: 🚀 Quick Start
 
-Check out my [project](https://github.com/username/repo).
+Check out my [project](jfforero.github.io/Charagua/).
 
 or clone it and use it.
 
