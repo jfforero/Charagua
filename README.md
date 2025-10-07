@@ -6,7 +6,7 @@
 
 For this project, we used **Strudel** to code the song, based on the arrangement provided by the music professor of **San Carlos de Quilicura School** in Santiago de Chile: [Charagua Sheet Music](https://colegiosancarlosquilicura.cl/wp-content/uploads/2020/10/IoMEDIO_charagua_partitura_IImedio.pdf)
 
-![Charagua Image](path/to/your/image.png)
+![Charagua Image](https://github.com/jfforero/Charagua/blob/main/charagua-portada2.jpg)
 
 ## Mokõi
 
