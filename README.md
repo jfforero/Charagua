@@ -10,10 +10,12 @@ For this project, we used **Strudel** to code the song, based on the arrangement
 
 ## Mokõi
 
-You can **play and edit the project** as you like. Feel free to **download or clone** the project to explore the live-coding environment and experiment with the musical arrangement.
+You can [**play and edit the project**](https://jfforero.github.io/Charagua/) as you like. Feel free to **download or clone** the project to explore the live-coding environment and experiment with the musical arrangement.
+
+
 
 ## Mbohapy
 
-Remember to **copy and share your versions**. Live-coding is not just about recreating music—it’s about **making it your own and spreading creativity**.
+Remember to **copy and share your versions**. Live-coding is not just about recreating music—it’s about making it. ** Ikatúma!**.
 
 
