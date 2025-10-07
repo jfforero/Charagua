@@ -1,21 +1,19 @@
-# Charagua -  Live-Coding
+# Charagua – Live-Coding
 
-##  Peteĩ: 🎵 About
-Another Abandoned Memory project. 
+## Peteĩ
 
-## Mokõi: 🚀 Quick Start
+*Charagua* is a Guaraní word that means **“place of waters”** and also refers to a territory in the Bolivian Chaco. The Chilean singer-songwriter **Víctor Jara** composed an instrumental piece in **1966**. The piece not only celebrates the land and its people but also invites the listener to **hear the landscape and the memory of the territory**, transforming sound into a bridge between **culture, history, and emotion**.
 
-Check out my [project](jfforero.github.io/Charagua/).
+For this project, we used **Strudel** to code the song, based on the arrangement provided by the music professor of **San Carlos de Quilicura School** in Santiago de Chile: [Charagua Sheet Music](https://colegiosancarlosquilicura.cl/wp-content/uploads/2020/10/IoMEDIO_charagua_partitura_IImedio.pdf)
 
-or clone it and use it.
+![Charagua Image](path/to/your/image.png)
 
-```bash
-# Clone and run locally
-git clone <your-repo-url>
-cd charagua-strudel
-python -m http.server 8000
-# Open http://localhost:8000 in browser
+## Mokõi
 
+You can **play and edit the project** as you like. Feel free to **download or clone** the project to explore the live-coding environment and experiment with the musical arrangement.
 
+## Mbohapy
+
+Remember to **copy and share your versions**. Live-coding is not just about recreating music—it’s about **making it your own and spreading creativity**.
 
 
