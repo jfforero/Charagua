@@ -1,4 +1,4 @@
-# Charagua – Live-Coding
+# CHARAGUA 
 
 ## Peteĩ
 
@@ -17,5 +17,7 @@ You can [**play and edit the project**](https://jfforero.github.io/Charagua/) as
 ## Mbohapy
 
 Remember to **copy and share your versions**. Live-coding is not just about recreating music—it’s about making it. ** Ikatúma!**.
+
+
 
 
